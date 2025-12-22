@@ -82,23 +82,20 @@ const Welcome = ({ setView }) => {
 
                 {/* Información Principal Unificada */}
                 <section className="animate-fade-in mb-6">
-                <div className="bg-white/90 backdrop-blur-sm p-6 rounded-xl shadow-xl border border-cosiaca-beige">
-                    <div className="text-center mb-6">
-                        <div className="text-3xl mb-3">🎭</div>
-                        <h3 className="text-xl md:text-2xl font-bold text-cosiaca-brown font-anton mb-3">
-                            Cosiaca 350: Una Experiencia Transmedia Única
+                <div className="bg-white/90 backdrop-blur-sm p-8 rounded-2xl shadow-2xl border-2 border-cosiaca-brown/20">
+                    <div className="text-center mb-8">
+                        <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-cosiaca-brown font-anton mb-6 leading-tight">
+                            Cosiaca 350
                         </h3>
-                        <p className="text-sm md:text-base text-cosiaca-brown/80 max-w-3xl mx-auto">
-                            En el marco de la conmemoración de los <strong>350 años de la fundación de Medellín</strong>,
-                            revivimos al mítico cuentero <strong>José García "Cosiaca"</strong>, el <em>primer comediante
-                            popular de Antioquia</em>, como guía y narrador a través de <strong>tres siglos y medio de historia local</strong>.
+                        <p className="text-base md:text-lg lg:text-xl text-cosiaca-brown/90 max-w-4xl mx-auto leading-relaxed font-medium">
+                            Proyecto transmedia que celebra los <strong>350 años de Medellín</strong> a través de la figura histórica de <strong>José García "Cosiaca"</strong>, el primer comediante popular de Antioquia.
                         </p>
                     </div>
 
-                    <div className="grid md:grid-cols-2 text-left gap-6">
+                    <div className="grid md:grid-cols-2 text-left gap-8">
                         <div>
-                            <h4 className="font-bold text-cosiaca-red mb-3 text-base md:text-lg">
-                                🌟 Componentes Transmedia:
+                            <h4 className="font-bold text-cosiaca-red mb-4 text-lg md:text-xl">
+                                Componentes Transmedia
                             </h4>
                             <ul className="space-y-1.5 text-cosiaca-brown/80 text-sm md:text-base">
                                 <li>• <strong>CosiacaBot:</strong> Asistente virtual para conversar con la historia</li>
@@ -110,8 +107,8 @@ const Welcome = ({ setView }) => {
                             </ul>
                         </div>
                         <div>
-                            <h4 className="font-bold text-cosiaca-red mb-3 text-base md:text-lg">
-                                🎯 Nuestra Propuesta:
+                            <h4 className="font-bold text-cosiaca-red mb-4 text-lg md:text-xl">
+                                Nuestra Propuesta
                             </h4>
                             <p className="text-cosiaca-brown/80 text-sm md:text-base leading-relaxed mb-3">
                                 "Contar la historia para vivirla riendo": mediante <strong>humor pícaro, oralidad paisa
@@ -132,42 +129,41 @@ const Welcome = ({ setView }) => {
                 </section>
 
                 {/* Experiencia Interactiva */}
-                <div className="bg-white/90 backdrop-blur-sm p-6 rounded-xl shadow-xl border border-cosiaca-beige mb-6">
-                    <div className="text-center mb-4">
-                        <div className="text-3xl mb-3">✨</div>
-                        <h3 className="text-xl md:text-2xl font-bold text-cosiaca-brown font-anton mb-3">
+                <div className="bg-gradient-to-br from-cosiaca-red/5 to-cosiaca-brown/5 backdrop-blur-sm p-8 rounded-2xl shadow-2xl border-2 border-cosiaca-red/20 mb-6">
+                    <div className="text-center mb-6">
+                        <h3 className="text-2xl md:text-3xl font-bold text-cosiaca-brown font-anton mb-4">
                             El Chismecito Histórico de Cosiaca
                         </h3>
-                        <p className="text-sm md:text-base text-cosiaca-brown/80 mb-4">
-                            ¿Quieres escuchar un <strong>dato curioso</strong> de la historia de Medellín?
+                        <p className="text-base md:text-lg text-cosiaca-brown/80 mb-6 max-w-2xl mx-auto">
+                            Descubre un <strong>dato curioso</strong> de la historia de Medellín
                         </p>
                     </div>
                     
                     <button
                         onClick={handleGenerateFact}
-                        className="w-full max-w-md mx-auto bg-gradient-to-r from-cosiaca-red to-cosiaca-red-dark text-white font-bold py-3 px-6 rounded-xl hover:shadow-xl transition-all duration-300 transform hover:scale-105 text-base md:text-lg flex items-center justify-center mb-4"
+                        className="w-full max-w-md mx-auto bg-gradient-to-r from-cosiaca-red to-cosiaca-red-dark text-white font-bold py-4 px-8 rounded-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105 text-lg md:text-xl flex items-center justify-center mb-6 disabled:opacity-70 disabled:cursor-not-allowed"
                         disabled={isLoadingFact}
                     >
                         {isLoadingFact ? (
                             <>
-                                <SparklesIcon className="animate-pulse mr-2 w-5 h-5" />
+                                <SparklesIcon className="animate-pulse mr-3 w-6 h-6" />
                                 Pensando el chisme...
                             </>
                         ) : (
                             <>
-                                <SparklesIcon className="mr-2 w-5 h-5" />
-                                Contar un Chisme Histórico
+                                <SparklesIcon className="mr-3 w-6 h-6" />
+                                Generar Chisme Histórico
                             </>
                         )}
                     </button>
-                    
+
                     {historicalFact && (
-                        <div className="p-4 bg-cosiaca-cream rounded-xl text-cosiaca-brown relative border border-cosiaca-beige animate-fade-in">
-                            <p className="text-sm md:text-base leading-relaxed font-medium italic text-center">
+                        <div className="p-6 bg-white rounded-2xl text-cosiaca-brown relative border-2 border-cosiaca-red/30 animate-fade-in shadow-lg max-w-3xl mx-auto">
+                            <p className="text-base md:text-lg leading-relaxed font-medium italic">
                                 "{historicalFact}"
                             </p>
-                            <div className="absolute top-0 right-0 -mt-3 -mr-3 bg-cosiaca-red text-white rounded-full p-2 shadow-lg">
-                                <BotIcon className="w-5 h-5" />
+                            <div className="absolute -top-4 -right-4 bg-cosiaca-red text-white rounded-full p-3 shadow-xl">
+                                <BotIcon className="w-6 h-6" />
                             </div>
                         </div>
                     )}
@@ -196,7 +192,7 @@ const Welcome = ({ setView }) => {
                 <section className="animate-fade-in mb-8 sm:mb-12">
                 <div className="bg-white/90 backdrop-blur-sm p-8 xl:p-1920 rounded-2xl shadow-2xl border border-cosiaca-beige max-w-6xl xl:max-w-7xl mx-auto">
                     <h3 className="text-2xl xl:text-1920-lg font-bold text-cosiaca-brown mb-8 font-anton text-center">
-                        🌌 Componentes Transmedia
+                        Componentes Transmedia
                     </h3>
                     <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
                         <div className="bg-cosiaca-cream/50 p-6 rounded-xl border border-cosiaca-beige hover:shadow-lg transition-all duration-300 group">
@@ -249,7 +245,7 @@ const Welcome = ({ setView }) => {
                 <section className="animate-fade-in mb-8 sm:mb-12">
                 <div className="bg-white/90 backdrop-blur-sm p-8 xl:p-1920 rounded-2xl shadow-2xl border border-cosiaca-beige max-w-6xl xl:max-w-7xl mx-auto">
                     <h3 className="text-2xl xl:text-1920-lg font-bold text-cosiaca-brown mb-6 font-anton text-center">
-                        🔍 Inspiración y Fuentes Históricas
+                        Inspiración y Fuentes Históricas
                     </h3>
                     <div className="responsive-grid gap-8">
                         <div>
@@ -275,7 +271,7 @@ const Welcome = ({ setView }) => {
                 <section className="animate-fade-in mb-8 sm:mb-12">
                 <div className="bg-gradient-to-r from-cosiaca-red/10 to-cosiaca-brown/10 p-6 xl:p-8 rounded-2xl border border-cosiaca-beige/50 max-w-6xl xl:max-w-7xl mx-auto text-center">
                     <h3 className="text-2xl xl:text-1920-lg font-bold text-cosiaca-brown mb-3 font-anton">
-                        🏛️ Proyecto Oficial
+                        Proyecto Oficial
                     </h3>
                     <p className="text-lg xl:text-1920-base text-cosiaca-brown/80 leading-relaxed mb-4">
                         <strong>{"{COSIACA "}<strong>350</strong>{"}"}</strong> es una propuesta transmedia beneficiada de las
@@ -297,7 +293,7 @@ const Welcome = ({ setView }) => {
                 <section className="animate-fade-in mb-8 sm:mb-12">
                 <div className="bg-white/90 backdrop-blur-sm p-8 xl:p-1920 rounded-2xl shadow-2xl border border-cosiaca-beige max-w-6xl xl:max-w-7xl mx-auto">
                     <h3 className="text-2xl xl:text-1920-lg font-bold text-cosiaca-brown mb-6 font-anton text-center">
-                        👥 Equipo
+                        Equipo
                     </h3>
                     <p className="text-center text-cosiaca-brown/70 mb-8 text-lg xl:text-1920-base">
                         Los artífices detrás de la Re-evolución de Cosiaca

@@ -21,8 +21,6 @@ const Home = ({ setView }) => {
             </div>
 
             {/* Elementos flotantes decorativos */}
-            <div className="absolute top-10 left-10 text-3xl lg:text-4xl xl:text-6xl animate-bounce opacity-20" style={{animationDelay: '0.5s'}}>🎭</div>
-            <div className="absolute top-32 right-16 text-2xl lg:text-3xl xl:text-5xl animate-bounce opacity-20" style={{animationDelay: '1s'}}>📚</div>
             <div className="absolute bottom-32 left-16 text-2xl lg:text-3xl xl:text-5xl animate-bounce opacity-20" style={{animationDelay: '1.5s'}}>🎵</div>
             <div className="absolute bottom-16 right-24 text-3xl lg:text-4xl xl:text-6xl animate-bounce opacity-20" style={{animationDelay: '2s'}}>🎪</div>
 
@@ -42,15 +40,12 @@ const Home = ({ setView }) => {
                     </div>
 
                     {/* Mensaje principal */}
-                    <div className="animate-fade-in-up space-y-3">
-                        <div className="text-4xl mb-3 animate-bounce">🎉</div>
-                        <h2 className="text-2xl md:text-3xl lg:text-4xl font-anton text-cosiaca-principal">
-                            ¡TODO ESTÁ LISTO!
+                    <div className="animate-fade-in-up space-y-4">
+                        <h2 className="text-3xl md:text-4xl lg:text-5xl font-anton text-cosiaca-principal leading-tight">
+                            Cosiaca 350
                         </h2>
-                        <p className="text-sm md:text-base lg:text-lg text-cosiaca-principal/80 font-montserrat leading-relaxed max-w-3xl mx-auto px-2">
-                            Un proyecto transmedia que celebra los <strong className="text-cosiaca-enfasis">350</strong> años de Medellín
-                            a través de la figura histórica de <em className="text-cosiaca-acento font-semibold">José García "Cosiaca"</em>,
-                            el primer comediante popular de Antioquia.
+                        <p className="text-base md:text-lg lg:text-xl text-cosiaca-principal/90 font-montserrat leading-relaxed max-w-3xl mx-auto px-2 font-medium">
+                            Proyecto transmedia que celebra los <strong className="text-cosiaca-enfasis">350 años de Medellín</strong> a través de la figura histórica de <strong className="text-cosiaca-acento">José García "Cosiaca"</strong>, el primer comediante popular de Antioquia.
                         </p>
                     </div>
 
@@ -114,7 +109,7 @@ const Home = ({ setView }) => {
                                     <p className="text-cosiaca-principal/70 font-montserrat text-xs">1675 - 2025 (<strong className="text-cosiaca-enfasis">350</strong> años)</p>
                                 </div>
                                 <div className="space-y-1.5">
-                                    <div className="text-2xl">🎭</div>
+                                    <div className="text-2xl">👤</div>
                                     <h3 className="font-bold text-cosiaca-principal font-montserrat text-xs md:text-sm">Personaje</h3>
                                     <p className="text-cosiaca-acento font-montserrat font-semibold text-xs">José García "Cosiaca"</p>
                                 </div>
@@ -136,7 +131,7 @@ const Home = ({ setView }) => {
                             Propuesta transmedia para la celebración de los <strong style={{ color: '#C92C3D' }}>350</strong> años de Medellín
                         </p>
                         <p className="text-xs font-montserrat" style={{ color: '#3A2B21' }}>
-                            🎭 <strong>Núcleo Colectivo</strong> • 📍 Medellín, Colombia • 🎪 2025
+                            <strong>Núcleo Colectivo</strong> • 📍 Medellín, Colombia • 🎪 2025
                         </p>
                     </div>
                 </div>
