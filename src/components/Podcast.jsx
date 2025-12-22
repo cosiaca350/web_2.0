@@ -57,8 +57,8 @@ const Podcast = () => {
         },
         {
             id: 5,
-            title: "Fernando García - Entrevista Especial",
-            description: "Conversación profunda con Fernando García sobre la historia y legado de Cosiaca en la cultura antioqueña.",
+            title: "Fernando González Ochoa - Entrevista Especial",
+            description: "Conversación profunda con Fernando González Ochoa sobre la historia y legado de Cosiaca en la cultura antioqueña.",
             duration: "18:30",
             audioFile: "https://raw.githubusercontent.com/cosiaca350/web/main/PODCAST/fernando%202%20master.mp3",
             category: "Entrevistas",
