@@ -311,7 +311,7 @@ const Welcome = ({ setView }) => {
                         <div className="bg-cosiaca-cream/50 p-6 rounded-xl border border-cosiaca-beige hover:shadow-lg transition-all duration-300">
                             <h4 className="font-bold text-lg text-cosiaca-brown mb-2">Juan Alejandro Ramírez</h4>
                             <p className="text-cosiaca-brown/80 text-sm">
-                                Desarrollo narrativo (fase inicial)
+                                Guion y contenido
                             </p>
                         </div>
                         <div className="bg-cosiaca-cream/50 p-6 rounded-xl border border-cosiaca-beige hover:shadow-lg transition-all duration-300">

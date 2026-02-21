@@ -5,9 +5,9 @@ const Libros = () => {
         <div className="animate-fade-in max-w-4xl mx-auto text-cosiaca-brown space-y-8">
             <header className="text-center">
                 <h1 className="text-4xl md:text-5xl font-bold font-anton text-cosiaca-brown">
-                    📖 Libros: Antecedente Narrativo
+                    📖 Libros: La Base Narrativa
                 </h1>
-                <p className="text-xl mt-2 text-cosiaca-brown-light/70">Una obra literaria que dialoga con el universo transmedia de Cosiaca 350.</p>
+                <p className="text-xl mt-2 text-cosiaca-brown-light/70">La crónica que inspira nuestro universo transmedia.</p>
             </header>
             
             <div className="bg-cosiaca-beige/30 p-8 rounded-xl shadow-2xl border border-cosiaca-beige md:flex md:items-center md:space-x-8">
@@ -33,13 +33,15 @@ const Libros = () => {
                         "País de Cosiacas, ciegos y puritanos"
                     </h2>
                     <p className="text-lg mb-4">
-                        El libro <strong>País de Cosiacas, ciegos y puritanos</strong>, escrito por Juan Alejandro Ramírez, constituye uno de los referentes narrativos que inspiraron el desarrollo del universo transmedia Cosiaca 350.
-                    </p>
-                    <p className="mb-4">
-                        A través de una aproximación histórica y literaria a la figura de Cosiaca, la obra explora elementos del humor, la oralidad y la identidad antioqueña. Algunos de estos enfoques dialogan con los contenidos desarrollados posteriormente en la plataforma digital, los pódcast y las piezas audiovisuales del proyecto.
+                        Esta obra de J. A. Ramírez no es solo un libro, es el corazón de Cosiaca 350. A través de una 
+                        investigación profunda y una pluma ágil, el autor desentierra las raíces de la picaresca antioqueña, 
+                        personificada en la figura de Cosiaca. El libro sirve como nuestra "biblia" narrativa, proporcionando 
+                        el tono, las anécdotas y el contexto histórico que alimentan cada componente de nuestro proyecto transmedia.
                     </p>
                     <p>
-                        El libro funciona como antecedente literario dentro de un proceso creativo más amplio, que integra investigación histórica adicional, desarrollo tecnológico, diseño interactivo, producción audiovisual y construcción transmedia liderada por el equipo de Núcleo Colectivo.
+                        La crónica novelada explora cómo el humor, la astucia y la oralidad han sido herramientas de 
+                        supervivencia y cohesión social en la región, sentando las bases para entender la identidad 
+                        "paisa" de hoy.
                     </p>
                 </div>
             </div>
@@ -59,9 +61,15 @@ const Libros = () => {
                     </div>
                     <div className="bg-cosiaca-cream/50 p-4 rounded-lg border border-cosiaca-beige">
                         <h3 className="font-bold text-cosiaca-brown mb-2">🎯 Enfoque</h3>
-                        <p className="text-cosiaca-brown/80">Humor e identidad cultural</p>
+                        <p className="text-cosiaca-brown/80">Humor Paisa e Historia</p>
                     </div>
                 </div>
+                <p className="text-lg text-cosiaca-brown/80 mt-6">
+                    El libro es la piedra angular del proyecto Cosiaca 350, combinando investigación histórica rigurosa 
+                    con el humor característico de la cultura paisa. A través de sus páginas, los lectores descubren 
+                    cómo se forjó la identidad antioqueña y el papel fundamental que jugó el humor popular en la 
+                    construcción de nuestra sociedad.
+                </p>
             </div>
         </div>
     );

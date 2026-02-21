@@ -2,37 +2,27 @@ import React from 'react';
 
 const Team = () => {
     const teamMembers = [
-        {
-            name: 'Manuel Palacio',
-            role: 'Dirección creativa y general · Producción ejecutiva · Desarrollo transmedia y tecnológico · Diseño visual',
-            img: 'https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&fit=crop'
+        { 
+            name: 'Manuel Palacio', 
+            role: 'Director creativo y productor, diseñador visual.', 
+            img: 'https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&fit=crop' 
         },
-        {
-            name: 'Carlos Andrés Londoño Ruiz',
-            role: 'Dirección artística · Producción audiovisual · Diseño visual e integración de IA',
-            img: 'https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&fit=crop'
+        { 
+            name: 'Carlos Andrés Londoño Ruiz', 
+            role: 'Director artístico y diseñador visual IA.', 
+            img: 'https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&fit=crop' 
         },
-        {
-            name: 'Juan Alejandro Ramírez',
-            role: 'Desarrollo narrativo (fase inicial)',
-            img: 'https://images.pexels.com/photos/1681010/pexels-photo-1681010.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&fit=crop'
-        },
-        {
-            name: 'Mónica Ruíz',
-            role: 'Investigación histórica · Edición literaria y corrección de estilo (componente editorial del libro)',
-            img: 'https://images.pexels.com/photos/1181690/pexels-photo-1181690.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&fit=crop'
-        },
-        {
-            name: 'Felipe Ramírez Ángel',
-            role: 'Diseño y producción sonora',
-            img: 'https://images.pexels.com/photos/3807517/pexels-photo-3807517.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&fit=crop'
+        { 
+            name: 'Juan Alejandro Ramírez', 
+            role: 'Director de guión y contenido, líder e investigador histórico.', 
+            img: 'https://images.pexels.com/photos/1681010/pexels-photo-1681010.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&fit=crop' 
         },
     ];
 
     return (
         <div className="animate-fade-in max-w-5xl mx-auto text-cosiaca-brown space-y-12">
             <header className="text-center">
-                <h1 className="text-4xl md:text-5xl font-bold font-anton text-cosiaca-brown">Equipo de dirección y producción</h1>
+                <h1 className="text-4xl md:text-5xl font-bold font-anton text-cosiaca-brown">Nuestro Equipo</h1>
                 <p className="text-xl mt-2 text-cosiaca-brown-light/70">Los artífices detrás de la Re-evolución de Cosiaca.</p>
             </header>
             
