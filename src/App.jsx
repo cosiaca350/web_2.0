@@ -14,6 +14,7 @@ import Archivo from './components/Archivo';
 import CosiacaBot from './components/CosiacaBot';
 import HistoriaAmpliada from './components/HistoriaAmpliada';
 import AccessibilityControls from './components/AccessibilityControls';
+import Team from './components/Team';
 import './App.css';
 
 // Hook para navegación suave
@@ -85,6 +86,8 @@ const App = () => {
                 return user ? <Libros /> : <div className="text-center text-gray-400 mt-20">Cargando...</div>;
             case 'videos':
                 return <Videos />;
+            case 'team':
+                return <Team />;
             default:
                 return <Home setView={setView} />;
         }
