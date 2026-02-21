@@ -56,7 +56,6 @@ const Navbar = ({ view, setView }) => {
         { name: 'Libros', view: 'libros' },
         { name: 'Línea de Tiempo', view: 'timeline' },
         { name: 'Archivo', view: 'archivo' },
-        { name: 'Equipo', view: 'team' },
     ];
     
     return (
